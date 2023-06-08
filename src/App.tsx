@@ -17,14 +17,12 @@ function App() {
     <div className='my_img'>
       <img src={Google} alt="" />
     </div>
+
     <div className='my_input'>
-      <input type="text"/>
       <img className='serch' src={Icon}/>
-    </div>
+      <input type="text"/>
+    </div>   
 
-
-  
-    
     <div className='my_button'>
       <form action="https://www.google.com">
         <button>Поиск в Google</button>
