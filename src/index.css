@@ -38,7 +38,7 @@ input{
 
 .my_button{
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -68,6 +68,7 @@ button{
   margin-right: 20px;
   height: 35px;
   width: 170px;
+  transition: background-color 2s;
   
 }
 
@@ -110,4 +111,8 @@ footer{
 
 .input-container input {
   padding-left: 30px;
+}
+
+.second_page{
+  text-align: center;
 }
