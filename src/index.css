@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  text-align: right;
+}
+
+a {
+  margin-top: 15px;
+  margin-right: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+span{
+  margin-right: 20px;
+}
+
+.img_google{
+  text-align: center;
+}
+
+img{
+  height: 180px;
+  width: 300;
+}
+
+input{
+  display: flex;
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search_icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.search_bar {
+  position: absolute;
+  border-radius: 45px;
+  display: flex;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid #2a2a2a;
+  padding: 12px;
+  width: 45%;
+}
+
+.my_button{
+  display: flex;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  
+}
+
+button:hover{
+  border: 20px;
+  background-color: #20aa87;
+}
+
+button{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ebe7e7;
+  border: 1px;
+  margin-top: 130px;
+  margin-right: 20px;
+  height: 35px;
+  width: 170px;
+  transition: background-color 2s;
+}
+
+footer{
+  background-color: #e3e3e3;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px; 
+}
+
