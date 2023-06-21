@@ -11,7 +11,7 @@ export function Google(){
             <a href="https://www.google.com/imghp?hl=ru&ogbl">Картинки</a>
             <span>Квадрат</span>
             <span>Аккаунт</span>
-            <Navigation/>
+            <Navigation name_page = 'сетчик' way = '/counter'/>
           </div>
     
           <div className='img_google'>

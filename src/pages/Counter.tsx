@@ -11,7 +11,7 @@ export function Counter(){
     };
     return(
         <body>
-            <Navigation />
+            <Navigation name_page = 'google' way = '/'/>
             <div>
                 <button onClick={minus}>-</button>
                 <span>{counter}</span>
