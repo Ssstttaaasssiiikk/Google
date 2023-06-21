@@ -2,6 +2,7 @@ import React from 'react';
 import Img_Google from '../image/Google.png';
 import Icon_Search from '../image/icon.png'
 import { Navigation } from '../components/Nav';
+import { My_button } from '../components/Button';
 
 export function Google(){
     return (
@@ -17,19 +18,15 @@ export function Google(){
           <div className='img_google'>
             <img src={Img_Google}  />
           </div>
-    
+
           <div className='search_bar'>
             <input type="text" />
             <img src={Icon_Search} className='search_icon'/>
           </div>
-    
+
           <div className='my_button'>
-            <form action="https://www.google.com">
-              <button>Поиск в Google</button>
-            </form>
-            <form action="https://www.google.com/doodles">
-              <button>Мне повезет!</button>
-            </form>      
+            <My_button link = 'https://www.google.com' button_text = 'Поиск в Google'/>
+            <My_button link = 'https://www.google.com/doodles' button_text = 'Мне повезет!'/>
           </div>
           <footer>
             <span>
