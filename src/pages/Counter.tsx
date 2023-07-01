@@ -2,22 +2,26 @@ import React, {useState} from 'react';
 import { Navigation } from '../components/Nav';
 
 export function Counter(){
-    const [counter, setCounter] = useState(0);
-    const plus = () => {
-        setCounter(counter + 1);
-    };
-    const minus = () => {
-        setCounter(counter - 1);
-    };
+    const [counter, setCounter] = useState<number>(0)
+    const [userText, setUserText] = useState<string>('')
+    const userTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setUserText(event.target.value);
+      };
     return(
-        <body>
+        <>
             <Navigation name_page = 'google' way = '/'/>
             <div>
-                <button onClick={minus}>-</button>
+                <button onClick={() => setCounter(counter + 1)}>-</button>
                 <span>{counter}</span>
-                <button onClick={plus}>+</button>
+                <button onClick={() => setCounter(counter + 1)}>+</button>
+            </div>
+            <div className='search_bar'>
+                <input type="text" value={userText} onChange={userTextChange} />
+            </div>
+            <div>
+                <span>{userText}</span>
             </div>
             
-        </body>
+        </>
     );
 }
